@@ -1,0 +1,34 @@
+<html>
+<title>Velocity模板语法</title>
+<pre>
+    $!{type}
+colors: $!{colors}
+#foreach($color in $colors)
+       ${foreach.index} -- $!{color} -- ${foreach.count}
+
+#end
+    #foreach($key in $map.keySet())
+    Number: $key Value: ${map.get($key)}
+    #end
+    -----------------
+    #foreach($kv in $map.entrySet())
+    Number: $kv.key, Value: $kv.value
+    #end
+    -----------
+    ${user.name}
+    -----------
+    #set($title = "LION")
+    Title : $title
+
+    #parse("header.html")
+
+    #macro(render_color,$index,$color)
+        Color Render Macro $index,$color
+    #end
+
+    #foreach($color in $colors)
+        render_colr($foreach.index,$color)
+    #end
+</pre>
+
+</html>
