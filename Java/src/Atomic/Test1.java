@@ -38,6 +38,6 @@ public class Test1 {
         t2.join();
 
         System.out.println(test.total.get());
-        AtomicReference
+
     }
 }
