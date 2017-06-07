@@ -52,7 +52,9 @@ public class AVLNode {
         }
 
     }
-
+    private void left_rotate(AVLNode p){
+        
+    }
     private void right_rotate(AVLNode p){
         AVLNode pParent = p.parent, pRightSon = p.left;
         AVLNode pLeftGrandSon = pRightSon.right;
