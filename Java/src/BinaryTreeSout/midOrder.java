@@ -28,7 +28,34 @@ public class midOrder {
         b.left = d; b.right = e;
         c.left = f; c.right = g;
 //        new midOrder().midOrderFind();
-        new midOrder().preOrder();
+//        new midOrder().preOrder();
+        new midOrder().lastFind();
+    }
+
+
+    public void lastFind(){
+        if (root == null)
+            return;
+        Stack<Node> s  = new Stack<>();
+        Node current;
+        s.push(root);
+        while (!s.isEmpty()){
+            current = s.peek();
+            if (current.state == 0){
+                    if (current.left != null)
+                    s.push(current.left);
+                    current.state = 1;
+            }else if (current.state == 1){
+                    if (current.right != null)
+                    s.push(current.right);
+                    current.state = 2;
+            }else if (current.state == 2){
+                    System.out.println(current.data);
+                    current.state = 3;
+            }else if (current.state == 3){
+                    s.pop();
+            }
+        }
     }
 
     public void midOrderFind(){
