@@ -32,7 +32,7 @@ public class midOrder {
         new midOrder().lastFind();
     }
 
-
+    //左右中
     public void lastFind(){
         if (root == null)
             return;
@@ -43,17 +43,17 @@ public class midOrder {
             current = s.peek();
             if (current.state == 0){
                     if (current.left != null)
-                    s.push(current.left);
+                    s.push(current.left);//先放左
                     current.state = 1;
             }else if (current.state == 1){
                     if (current.right != null)
-                    s.push(current.right);
+                    s.push(current.right);//然后放右
                     current.state = 2;
             }else if (current.state == 2){
-                    System.out.println(current.data);
+                    System.out.println(current.data);//然后打印
                     current.state = 3;
             }else if (current.state == 3){
-                    s.pop();
+                    s.pop();//然后扔掉
             }
         }
     }

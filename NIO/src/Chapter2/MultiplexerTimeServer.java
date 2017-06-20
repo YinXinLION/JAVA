@@ -2,9 +2,12 @@ package Chapter2;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
@@ -76,7 +79,46 @@ public class MultiplexerTimeServer implements  Runnable{
     private void handleInput(SelectionKey key) throws IOException{
         if (key.isValid()){
             //如果有效处理新接入的请求信息
+            if (key.isAcceptable()){
+                ServerSocketChannel ssc = (ServerSocketChannel)key.channel();
+                SocketChannel sc = ssc.accept();
+                sc.configureBlocking(false);//非阻塞
+                sc.register(selector,SelectionKey.OP_READ);
+            }
+            if (key.isReadable()){
+                SocketChannel sc = (SocketChannel)key.channel();
+                ByteBuffer readBuffer = ByteBuffer.allocate(1024);
+                int readBytes = sc.read(readBuffer);
+                if (readBytes > 0){
+                    readBuffer.flip();
+                    byte[] bytes = new byte[readBuffer.remaining()];
+                    readBuffer.get(bytes);
+                    String body = new String(bytes, "UTF-8");
+                    System.out.println("The time server receive order : " + body);
+                    String currentTime = "QUERY TIME ORDER"
+                            .equalsIgnoreCase(body) ? new Date(System.currentTimeMillis()).toString()
+                            : "BAD ORDER";
+                    doWrite(sc, currentTime);
+                }else if(readBytes < 0){
+                    //对端链路关闭
+                    key.channel();
+                    sc.close();
+                }else ;
 
+
+            }
+
+        }
+
+    }
+
+    private void doWrite(SocketChannel channel,String response) throws IOException {
+        if (response != null && response.trim().length() > 0){
+            byte[] bytes = response.getBytes();
+            ByteBuffer writeBuffer = ByteBuffer.allocate(bytes.length);
+            writeBuffer.put(bytes);
+            writeBuffer.flip();
+            channel.write(writeBuffer);
         }
     }
 

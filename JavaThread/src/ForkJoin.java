@@ -1,7 +1,4 @@
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.Future;
-import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.*;
 
 /**
  * Created by 殷鑫 on 2017/5/11.
@@ -52,5 +49,6 @@ public class ForkJoin extends RecursiveTask<Integer>{
         ForkJoin task = new ForkJoin(1,4);
         Future<Integer> future = forkJoinPool.submit(task);
         System.out.println(future.get());
+        ThreadPoolExecutor
     }
 }
