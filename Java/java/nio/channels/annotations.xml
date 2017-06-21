@@ -1,0 +1,5 @@
+<root>
+    <item name='java.nio.channels.SelectionKey'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
