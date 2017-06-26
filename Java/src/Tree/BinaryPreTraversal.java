@@ -7,6 +7,7 @@ import java.util.Stack;
 /**
  * Created by yinxin on 17-6-24.
  */
+//前序遍历
 public class BinaryPreTraversal {
     public static void main(String[] args) {
         Node a = new Node(1);

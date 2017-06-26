@@ -7,6 +7,7 @@ import java.util.*;
 /**
  * Created by yinxin on 17-6-25.
  */
+//按层遍历 倒叙
 public class BinaryLastLevelOrder {
     public static void main(String[] args) {
         Node a = new Node(3);

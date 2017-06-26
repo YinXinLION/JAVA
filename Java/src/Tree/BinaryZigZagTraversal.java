@@ -1,7 +1,5 @@
 package Tree;
 
-import org.omg.CORBA.NO_IMPLEMENT;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,19 +8,20 @@ import java.util.Queue;
 /**
  * Created by yinxin on 17-6-25.
  */
-//按层遍历
-public class BinaryLevelOrder {
+//按层 从右往左
+public class BinaryZigZagTraversal {
     public static void main(String[] args) {
         Node a = new Node(3);
         Node b = new Node(9);
         Node c = new Node(20);
         Node d = new Node(15);
-        Node e = new Node(17);
+        Node e = new Node(7);
         a.right = c; a.left = b;
         b.left = b.right = null;
         c.left = d ; c.right = e;
         d.left = d.right = null;
         e.left = e.right = null;
+
         List<List<Integer>> lists = levelOrder(a);
         for (List<Integer> list : lists){
             for (Integer s : list){
@@ -42,8 +41,9 @@ public class BinaryLevelOrder {
             while (!queue.isEmpty()){
                 Node node = queue.poll();
                 list.add(node.data);
-                if (node.left != null) nextQueue.add(node.left);
                 if (node.right != null) nextQueue.add(node.right);
+                if (node.left != null) nextQueue.add(node.left);
+
             }
             queue = nextQueue;
             levels.add(list);

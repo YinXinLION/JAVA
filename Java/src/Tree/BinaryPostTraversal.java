@@ -7,14 +7,21 @@ import java.util.*;
 /**
  * Created by yinxin on 17-6-25.
  */
+//后序遍历
 public class BinaryPostTraversal {
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(2);
         Node c = new Node(3);
+        Node d = new Node(4);
+        Node e = new Node(5);
+        Node f = new Node(6);
         a.left = null;a.right = b;
-        b.left =  c;b.right = null;
+        b.left =  c;b.right = d;
         c.left = c.right = null;
+        d.left = null; d.right = e;
+        e.left = f; e.right = null;
+        f.left = f.right = null;
         List<Integer> list = postOrderTraversal(a);
         for (Integer s : list){
             System.out.println(s);
