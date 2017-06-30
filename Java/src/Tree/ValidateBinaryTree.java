@@ -35,7 +35,8 @@ public class ValidateBinaryTree {
         inOrderTraversal(root.right);
     }
 
-
+    //每次取一个判断所有的是否是比他小，或者比他大
+    //然后取左孩子，或者右孩子再次判断所有的n-2个的
     // --------暴力破解
     public boolean isValidBST(Node root) {
         if (root == null) return true;

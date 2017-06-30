@@ -23,18 +23,23 @@ public class BinaryPreTraversal {
     }
     // list输出结果
     public static List<Integer> preTraversal(Node root){
+        //创建一个链表，用来表示输出的先后顺序
         List<Integer> list = new LinkedList<Integer>();
         if (root == null){
             return list;
         }
+        //栈
         Stack<Node> stack = new Stack<>();
         Node p = root;
         while (p != null || !stack.isEmpty()){
+            //如果p不是空,那么左孩子循环加入栈，并且加入list中
+            //因为先序 中左右
             while (p != null){
                 list.add(p.data);
                 stack.push(p);
                 p = p.left;
             }
+            //因为已经把最左的加入了,那么取出来栈顶，然后查看是否有右孩子
             p = stack.pop();
             p = p.right;
         }

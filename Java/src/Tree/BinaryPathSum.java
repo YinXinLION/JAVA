@@ -11,6 +11,7 @@ public class BinaryPathSum {
     public static void main(String[] args) {
 
     }
+    //采用后序遍历，栈中的元素即为路径
 
     public static List<List<Integer>> pathSum(Node root,int sum){
         List<List<Integer>> lists = new ArrayList<>();

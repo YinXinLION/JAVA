@@ -25,13 +25,17 @@ public class BinaryInTraversal {
         List<Integer> list = new ArrayList<Integer>();
         Stack<Node> s = new Stack<Node>();
         Node p = root;
+        //不断的加入左孩子
         while (p != null || !s.isEmpty()){
             while (p != null){
                 s.push(p);
                 p = p.left;
             }
+            //取出栈顶
             p = s.pop();
+            //打印
             list.add(p.data);
+            //查看是否有右孩子
             p = p.right;
         }
         return list;
