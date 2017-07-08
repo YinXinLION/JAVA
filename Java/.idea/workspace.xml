@@ -5,7 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/NIO/StateMachine.java" line="42" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2d128c-0160-4321-8194-76e489fe4377" name="Default" comment="~">
+    <list default="true" id="4d2d128c-0160-4321-8194-76e489fe4377" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Java.iws" />
@@ -905,7 +905,7 @@
       <workItem from="1499237646935" duration="36000" />
       <workItem from="1499241797655" duration="220000" />
       <workItem from="1499440884260" duration="4339000" />
-      <workItem from="1499488387860" duration="2991000" />
+      <workItem from="1499488387860" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="~">
       <created>1499502583532</created>
@@ -914,11 +914,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499502583532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="~">
+      <created>1499502642011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1499502642011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114690000" />
+    <option name="totallyTimeSpent" value="114698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="853" extended-state="6" />
