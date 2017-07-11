@@ -158,7 +158,7 @@ class CommonClient {
                 r *= 10;
                 r += buf.get() - '0';
             }
-            return r;
-        }
+
+        } return r;
     }
 }
