@@ -1,5 +1,6 @@
 package StudyComputer;
 
+import com.sun.org.apache.regexp.internal.RE;
 import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
 
 import java.util.ArrayList;
@@ -19,10 +20,14 @@ public class ArrayListTest {
         intList.add(789);
 
         for (Integer a : intList){
+//            intList.remove(a); 
             System.out.println(a);
         }
 
         for (int i = 0; i < intList.size(); i++){
+            if (intList.get(i) == 123){
+                intList.remove(i);
+            }
             System.out.println(intList.get(i));
         }
 
