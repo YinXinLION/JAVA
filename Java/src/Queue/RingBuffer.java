@@ -39,7 +39,7 @@ public class RingBuffer {
         else {
             int temp = front;
             front = (front+1)%size;
-            return array[temp]
+            return array[temp];
         }
     }
 }
