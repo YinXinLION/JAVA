@@ -19,7 +19,7 @@ public class BinaryTree {
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(2);
-        Node c = new Node(3);
+        Node c = new Node(37);
         Node d = new Node(4);
         Node e = new Node(5);
         a.left = b;a.right=c;     //      a
@@ -32,6 +32,9 @@ public class BinaryTree {
         //二叉树前序非递归
         preOrder(a);
         LevelTraverse(a);
+        System.out.println();
+        System.out.println("---------");
+        searchA(a);
     }
 
     //求二叉树中的节点个数
@@ -69,7 +72,21 @@ public class BinaryTree {
             p = p.right;
         }
     }
-
+    //广度
+    public static void searchA(Node root){
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()){
+            Node p = queue.poll();
+            System.out.println(p.data);
+            if (p.left!=null){
+                queue.offer(p.left);
+            }
+            if (p.right!=null){
+                queue.offer(p.right);
+            }
+        }
+    }
     //分层遍历
     public static  void LevelTraverse(Node root){
         if (root == null){
@@ -87,7 +104,6 @@ public class BinaryTree {
             if (cur.right!= null){
                 queue.offer(cur.right);
             }
-
         }
     }
 }
