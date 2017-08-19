@@ -33,6 +33,35 @@ public class test {
         System.out.println(numOfLevelTreeNode(a,4));
         System.out.println(isBalanced(a));
     }
+    //二叉树中序遍历
+    public static ArrayList inOrder(TreeNode root){
+        ArrayList<Integer> list = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode current = root;
+        while (current!=null ||!stack.isEmpty()){
+            while (current!=null){
+                stack.add(current);
+                current = current.left;
+            }
+            current = stack.peek();
+            stack.pop();
+            list.add(current.val);
+            current = current.right;
+        }
+        return list;
+    }
+    //后序遍历
+    public static ArrayList<Integer> postOrder(TreeNode root){
+        ArrayList<Integer> list = new ArrayList<>();
+        if (root == null){
+            return list;
+        }
+        list.addAll(postOrder(root.left));
+        list.addAll(postOrder(root.right));
+        list.add(root.val);
+        return list;
+    }
+
     //翻转二叉树Or镜像二叉树
     public static TreeNode mirrorTreeNode(TreeNode root){
         if (root == null){
