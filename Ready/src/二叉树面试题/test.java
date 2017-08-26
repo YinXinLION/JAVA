@@ -1,6 +1,8 @@
 package 二叉树面试题;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -30,7 +32,7 @@ public class test {
         System.out.println(minDepth(a));
         System.out.println(numOfTreeNode(a));
         System.out.println("叶子节点数量"+numOfNoChildNode(a));
-        System.out.println(numOfLevelTreeNode(a,4));
+        System.out.println("二叉树中第K层节点的个数"+numOfLevelTreeNode(a,2));
         System.out.println(isBalanced(a));
     }
     //二叉树中序遍历
@@ -117,7 +119,7 @@ public class test {
 
 
 
-    //判断二叉树是否完全相同
+    //判断两个二叉树是否完全相同
     public static boolean isSameTreeNode(TreeNode t1,TreeNode t2){
         if (t1 == null &&  t2 == null){
             return true;
@@ -131,7 +133,27 @@ public class test {
         boolean right = isSameTreeNode(t1.right,t2.right);
         return left&right;
     }
-
+    //判断二叉树是否是完全二叉树
+//    public static boolean isCompleteTreeNode(TreeNode root){
+//        if (root == null){
+//            return false;
+//        }
+//        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+//        queue.add(root);
+//        boolean result = true;
+//        boolean hasNoChild = false;
+//        while (!queue.isEmpty()){
+//            TreeNode current = queue.remove();
+//            if (hasNoChild){
+//                if (current.left!=null||current.right!=null){
+//                    result = false;
+//                    break;
+//                }
+//            }else {
+////                if (current.left!=null)
+//            }
+//        }
+//    }
     //判断二叉树是否为平衡二叉树
     public static boolean isBalanced(TreeNode node){
         return maxDeath2(node)!=-1;
@@ -149,26 +171,26 @@ public class test {
     }
 
     //求二叉树中第K层节点的个数
-    public static int numOfLevelTreeNode(TreeNode root ,int k){
+    public static int numOfLevelTreeNode(TreeNode root ,int k){ //k是层数
         if (root == null || k < 1){
             return 0;
         }
-        if (k == 1){
+        if (k == 1){  //如果k==1,返回1
             return 1;
         }
-        int numleft = numOfLevelTreeNode(root.left,k-1);
+        int numleft = numOfLevelTreeNode(root.left,k-1);//左右递归到k=1
         int numright = numOfLevelTreeNode(root.right,k-1);
         return numleft+numright;
     }
 
     //求二叉树最大深度
     public static int maxDepth(TreeNode root){
-        if (root==null){
+        if (root==null){//如果为null返回
             return 0;
         }
-        int left = maxDepth(root.left);
-        int right = maxDepth(root.right);
-        return Math.max(left,right)+1;
+        int left = maxDepth(root.left);//得到左高度
+        int right = maxDepth(root.right);//右高度
+        return Math.max(left,right)+1;//高度最大的+1
     }
     //求二叉树最小深度
     public static int minDepth(TreeNode root){
@@ -177,7 +199,7 @@ public class test {
         }
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
-        return Math.min(left,right)+1;
+        return Math.min(left,right)+1;//找到最小的+1
     }
 
     //求二叉树中节点个数
@@ -185,18 +207,18 @@ public class test {
         if (root == null){
             return 0;
         }
-        int left = numOfTreeNode(root.left);
-        int right = numOfTreeNode(root.right);
+        int left = numOfTreeNode(root.left);//得到最孩子高度
+        int right = numOfTreeNode(root.right);//得到右孩子高度
         return left+right+1;
     }
 
     //求二叉树中叶子节点的个数
     public static int numOfNoChildNode(TreeNode root){
-        if (root == null){
+        if (root == null){//如果root为null 返回0就行
             return 0;
         }
-        System.out.println(root.val);
-        if (root.left == null && root.right == null){
+//        System.out.println(root.val);
+        if (root.left == null && root.right == null){ //如果root.left和root.right都为null,返回1
             return 1;
         }
         return numOfNoChildNode(root.left)+numOfNoChildNode(root.right);
