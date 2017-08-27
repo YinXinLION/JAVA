@@ -33,11 +33,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4060">
               <caret line="143" column="37" lean-forward="false" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#4512#4513#0" expanded="false" />
-                <element signature="e#4554#4555#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,8 +41,8 @@
       <file leaf-file-name="test1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/今日头条/test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1450">
-              <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="1392">
+              <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +76,8 @@
       <file leaf-file-name="ReserveStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/栈和队列/ReserveStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="435">
+              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -90,7 +86,7 @@
       <file leaf-file-name="SortStackbyStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/栈和队列/SortStackbyStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
+            <state relative-caret-position="435">
               <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
@@ -100,7 +96,7 @@
       <file leaf-file-name="MaxWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/栈和队列/MaxWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
+            <state relative-caret-position="609">
               <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding />
             </state>
@@ -110,8 +106,8 @@
       <file leaf-file-name="MaxRecSize.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/栈和队列/MaxRecSize.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+            <state relative-caret-position="112">
+              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -120,7 +116,7 @@
       <file leaf-file-name="Example1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/奇虎360/Example1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
+            <state relative-caret-position="928">
               <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding />
             </state>
@@ -220,10 +216,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1430" />
-    <option name="y" value="-11" />
-    <option name="width" value="1537" />
-    <option name="height" value="912" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1303" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -240,9 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,6 +336,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -854,14 +850,15 @@
       <workItem from="1503393800047" duration="2864000" />
       <workItem from="1503400870903" duration="3232000" />
       <workItem from="1503743375618" duration="6516000" />
+      <workItem from="1503841454865" duration="70000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95868000" />
+    <option name="totallyTimeSpent" value="95938000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1430" y="-11" width="1537" height="912" extended-state="7" />
+    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -873,7 +870,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37227213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20578346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15562649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1155,7 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,36 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8497">
           <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#84225#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#10144#10145#0" expanded="false" />
-            <element signature="e#10181#10182#0" expanded="false" />
-            <element signature="e#11991#11992#0" expanded="false" />
-            <element signature="e#12045#12046#0" expanded="false" />
-            <element signature="e#12720#12721#0" expanded="false" />
-            <element signature="e#12790#12791#0" expanded="false" />
-            <element signature="e#37807#37808#0" expanded="false" />
-            <element signature="e#37839#37840#0" expanded="false" />
-            <element signature="e#40716#40717#0" expanded="false" />
-            <element signature="e#40753#40754#0" expanded="false" />
-            <element signature="e#44527#44528#0" expanded="false" />
-            <element signature="e#44554#44555#0" expanded="false" />
-            <element signature="e#48436#48437#0" expanded="false" />
-            <element signature="e#48499#48500#0" expanded="false" />
-            <element signature="e#48546#48547#0" expanded="false" />
-            <element signature="e#48604#48605#0" expanded="false" />
-            <element signature="e#48747#48748#0" expanded="false" />
-            <element signature="e#48811#48812#0" expanded="false" />
-            <element signature="e#63283#63284#0" expanded="false" />
-            <element signature="e#63310#63311#0" expanded="false" />
-            <element signature="e#66057#66058#0" expanded="false" />
-            <element signature="e#66137#66138#0" expanded="false" />
-            <element signature="e#70537#70538#0" expanded="false" />
-            <element signature="e#70627#70628#0" expanded="false" />
-            <element signature="e#83683#83684#0" expanded="false" />
-            <element signature="e#83719#83720#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1653">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,18 +1181,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4060">
           <caret line="143" column="37" lean-forward="false" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4512#4513#0" expanded="false" />
-            <element signature="e#4554#4555#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/今日头条/test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="1392">
+          <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1255,15 +1216,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/栈和队列/ReserveStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="435">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/栈和队列/SortStackbyStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
+        <state relative-caret-position="435">
           <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
@@ -1271,7 +1232,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/奇虎360/Example1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
+        <state relative-caret-position="928">
           <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding />
         </state>
@@ -1279,7 +1240,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/栈和队列/MaxWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
+        <state relative-caret-position="609">
           <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding />
         </state>
@@ -1287,8 +1248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/栈和队列/MaxRecSize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        <state relative-caret-position="112">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding />
         </state>
       </provider>
