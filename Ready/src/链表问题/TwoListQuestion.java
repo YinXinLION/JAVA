@@ -26,6 +26,7 @@ public class TwoListQuestion {
         }
         return n1;
     }
+
     //判断两个无环链表是否相交
     public Node noLoop(Node head1, Node head2){
         if (head1 == null || head2 == null){

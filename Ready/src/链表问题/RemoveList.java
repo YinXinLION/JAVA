@@ -4,6 +4,15 @@ package 链表问题;
  * Created by yinxin on 17-8-27.
  */
 public class RemoveList {
+    /*
+    类把我看懵逼了 这个时用来翻转链表的
+    记录当前的前一个 和后一个
+    while(head!=null)
+    记录下一个节点
+    当前节点指向pre
+    更新pre = 当前节点
+    更新当前节点 = head
+     */
     public Node reverseList(Node head){
         Node pre = null;
         Node next = null;

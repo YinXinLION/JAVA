@@ -27,7 +27,7 @@ public class RemoceMidNode {
         //cur后面有2个，pre走一下 然后删除pre后面的即可
         while (cur.next!=null && cur.next.next!=null){
             pre = pre.next;
-            cur = curu.next.next;
+            cur = cur.next.next;
         }
         pre.next = pre.next.next;
         return head;
